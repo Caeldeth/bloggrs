@@ -5,7 +5,7 @@ const commentSeeds = [
     {
         cmt_text: "The man who passes the sentence should swing the sword",
         cmt_usr_id: 1,
-        cmt_pst_id: 20,
+        cmt_pst_id: 11,
     },
     {
         cmt_text: "You Grew Up With Actors, You Learned Their Craft And You Learnt It Well. But I Grew Up With Soldiers. I Learned How To Die A Long Time Ago.",
@@ -20,7 +20,7 @@ const commentSeeds = [
     {
         cmt_text: "You Want To Know The Horrible Truth? I Can't Even Remember What She Looked Like. I Only Know She Was The One Thing I Ever Wanted... Someone Took Her Away From Me, And Seven Kingdoms Couldn't Fill The Hole She Left Behind.",
         cmt_usr_id: 2,
-        cmt_pst_id: 19,
+        cmt_pst_id: 12,
     },
     {
         cmt_text: "You Heard The Hand, The King's Too Fat For His Armor! Go Find The Breastplate Stretcher! NOW!",
@@ -30,7 +30,7 @@ const commentSeeds = [
     {
         cmt_text: "Wear It In Silence Or I'll Honor You Again.",
         cmt_usr_id: 2,
-        cmt_pst_id: 20,
+        cmt_pst_id: 11,
     },
     {
         cmt_text: "By What Right Does The Wolf Judge The Lion?",
@@ -40,7 +40,7 @@ const commentSeeds = [
     {
         cmt_text: "The Things I Do For Love.",
         cmt_usr_id: 3,
-        cmt_pst_id: 18,
+        cmt_pst_id: 6,
     },
     {
         cmt_text: "Jaime. My Name Is Jaime.",
@@ -55,7 +55,7 @@ const commentSeeds = [
     {
         cmt_text: "I Pledged To Ride North. I Intend To Honor That Pledge.",
         cmt_usr_id: 3,
-        cmt_pst_id: 19,
+        cmt_pst_id: 12,
     },
     {
         cmt_text: "On my honor as a Tully. On my honor as a Stark. Let him go, or I will CUT your wife's throat!",
@@ -70,7 +70,7 @@ const commentSeeds = [
     {
         cmt_text: "Listen to yourselves. If you were sons of mine, I would knock your heads together and lock you in a bedchamber until you remembered that you were brothers.",
         cmt_usr_id: 4,
-        cmt_pst_id: 18,
+        cmt_pst_id: 6,
     },
     {
         cmt_text: "If you lose, your father dies, your sisters die, we die.",
@@ -90,7 +90,7 @@ const commentSeeds = [
     {
         cmt_text: "They both have their health, gods be good. The raven brought more news. The king rides for Winterfell... with the queen, and all the rest of them.",
         cmt_usr_id: 4,
-        cmt_pst_id: 19,
+        cmt_pst_id: 12,
     },
     {
         cmt_text: "Shadowcats and hill tribes are the least of your concerns.",
@@ -145,7 +145,7 @@ const commentSeeds = [
     {
         cmt_text: "We both want to help people. We can only help them from a position of strength. Sometimes strength is terrible.",
         cmt_usr_id: 6,
-        cmt_pst_id: 20,
+        cmt_pst_id: 11,
     },
     {
         cmt_text: "You are small men. None of you are fit to lead the Dothraki. But I am, so I will.",
@@ -190,7 +190,7 @@ const commentSeeds = [
     {
         cmt_text: "The brave men didn't kill dragons, the brave men rode them.",
         cmt_usr_id: 8,
-        cmt_pst_id: 19,
+        cmt_pst_id: 12,
     },
     {
         cmt_text: "I want what I came for. I want the crown he promised me.",
@@ -210,7 +210,7 @@ const commentSeeds = [
     {
         cmt_text: "They were born on the wrong side of the Wall — doesn’t make them monsters.",
         cmt_usr_id: 9,
-        cmt_pst_id: 19,
+        cmt_pst_id: 12,
     },
     {
         cmt_text: "Sometimes there Is no happy choice, only one less grievous than the others.",
