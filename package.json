@@ -1,12 +1,13 @@
 {
   "name": "bloggrs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Challenge 14 - MVC Tech Blog",
   "main": "server.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
     "dotenv": "^10.0.0",
+    "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
     "express-session": "^1.17.2",
     "heroku": "^7.33.3",
@@ -23,8 +24,8 @@
     "url": "git+https://github.com/Caeldeth/bloggrs.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Caeldeth",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Caeldeth/bloggrs/issues"
   },
