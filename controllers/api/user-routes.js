@@ -62,9 +62,9 @@ router.get("/:usr_id", (req, res) => {
 router.post("/", (req, res) => {
     User.create({
         //expects username, email, password
-        username: req.body.usr_name,
-        email: req.body.usr_email,
-        password: req.body.usr_password,
+        usr_name: req.body.usr_name,
+        usr_email: req.body.usr_email,
+        usr_pw: req.body.usr_pw,
     })
         .then((dbUserData) => {
             //save the data into a session
@@ -95,7 +95,7 @@ router.post("/login", (req, res) => {
                 res.status(400).json({ message: "User not found" });
                 return;
             }
-            const validPassword = dbUserData.checkPassword(req.body.usr_password);
+            const validPassword = dbUserData.checkPassword(req.body.usr_pw);
 
             //check if password is correct
             if (!validPassword) {

@@ -9,8 +9,8 @@ Comment.init(
         //give comments a unique id
         cmt_id: {
             type: DataTypes.INTEGER,
-            primaryKey: true,
             allowNull: false,
+            primaryKey: true,
             autoIncrement: true
         },
         //link comment to author's user id
