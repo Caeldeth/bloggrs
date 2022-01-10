@@ -3,12 +3,9 @@ const express = require("express");
 // add file path as variable
 const path = require("path");
 // add controllers as variable
-const controller = require("./controllers");
+const routes = require("./controllers");
 // add handlebars
 const exphbs = require("express-handlebars");
-// switch handlebars extension to hbs
-app.engine('hbs', exphbs({defaultLayout: 'main', extname: '.hbs'}));
-app.set('view engine', 'hbs');
 // add sequelize
 const sequelize = require("./config/connection");
 // add express session
@@ -36,7 +33,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(session(sess));
-app.use("/", controller);
+app.use(routes);
+// switch handlebars extension to hbs
+app.engine('hbs', exphbs.engine({defaultLayout: 'main', extname: '.hbs'}));
+app.set('view engine', 'hbs');
 
 //start server
 sequelize.sync({ force: false }).then(() => {
