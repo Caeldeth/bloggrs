@@ -1,9 +1,9 @@
-<a href="/post/{{pst_id}}">
-    <div class="card">
-        <h3 class="post-header">{{pst_title}}</h3>
-        <h4>Posted by {{user.usr_name}} on {{format_date created_at}}</h4>
-        <div class="container">
-            <p class="post-text">{{pst_content}}</p>
+<a class="nohover" href="/post/{{pst_id}}">
+    <div class="nohover card text-decoration-none">
+        <div class="nohover card-body text-decoration-none">
+            <h5 class="nohover card-title text-decoration-none">{{pst_title}}</h3>
+            <h6 class="nohover card-subtitle mb-2 text-muted text-decoration-none">Posted by {{user.usr_name}} on {{format_date created_at}}</p>
+            <p class="nohover card-text text-decoration-none">{{pst_content}}</p>
         </div>
     </div>
 </a>

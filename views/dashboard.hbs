@@ -1,32 +1,34 @@
-<div class="column" id="menu-box">
-    <div class="card">
-        <button type="submit" id="btn-create" class="button">Create Post</button>
-        <button type="submit" id="btn-myPosts" class="button">My Posts</button>
-        <button type="submit" id="btn-editProfile" class="button">Edit Profile</button>
-    </div>
-</div>
-
-<div class="column" id="profile-create-post">
-    {{> create-post}}
-</div>
-
-<div class="column" id="posts-div">
-{{#if posts.length}}
-    <h2 class="title">Your Posts</h2>
-    <div class="box" id="profile-posts-box">
-        {{#each posts as |onePost|}}
-        <div>
-            {{> post onePost}}
-            <a href="/dashboard/edit/{{onePost.pst_id}}" class="edit-link">Edit Post</a>
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-2" id="menu-div">
+            <div class="card">
+                <button type="submit" id="btn-create" class="btn btn-none list-group-item bg-info">Create Post</button>
+                <button type="submit" id="btn-myPosts" class="btn btn-none list-group-item bg-info mt-2">My Posts</button>
+                <button type="submit" id="btn-editProfile" class="btn btn-none list-group-item bg-info mt-2">Edit Profile</button>
+            </div>
         </div>
-        {{/each}}
-    </div>
-{{else}}
-    <h2 class="title">No posts to show!</h2>
-{{/if}}
-</div>
+        <div class="col-10 d-none" id="menu-box">
+            <div class="container" id="profile-create-post">
+                {{> create-post}}
+            </div>
+        </div>
+        <div class="col-8 d-none" id="posts-div">
+            {{#if posts.length}}
+            <h2 class="title">Your Posts</h2>
+            <div class="box" id="profile-posts-box">
+                {{#each posts as |onePost|}}
+                <div>
+                {{> post onePost}}
+                <a href="/dashboard/edit/{{onePost.pst_id}}" class="edit-link">Edit Post</a>
+                </div>
+                {{/each}}
+            </div>
+            {{else}}
+            <h2 class="title">No posts to show!</h2>
+            {{/if}}
+        </div>
 
-<div class="column" id="profile">
+<div class="col-8 d-none" id="profile-div">
     <div>
         <label for="gh-profile">Github Username:</label>
         <input type="text" id="gh-profile" />
@@ -48,4 +50,4 @@
         <button type="submit" class="button" id="btn-update-pf">Update</button>        
     </div>
 </div>
-
+</div>

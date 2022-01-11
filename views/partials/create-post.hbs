@@ -1,14 +1,23 @@
 <div class="column" id="create-post">
     <form class="create-post-form">
-        <div>
-            <label for="post-title" class="label">Title</label>
-            <input class="input" type="text" id="create-post-title" name="post-title"/>
+        <div class="row">
+            <h3 class="label">Create Post</h3>
         </div>
-        <div>
-            <label for="post-content" class="label">Post Content</label>
-            <textarea class="textarea" type="text" id="create-post-content" name="post-content"></textarea>
+        <div class="row ml-1">
+            <h4 for="post-title" class="">Title</h4>
         </div>
-        <button type="submit" class="button" id="btn-post-submit">Create</button>
+        <div class="row ml-1">
+            <input class="form-control" type="text" id="create-post-title" name="post-title"/>
+        </div>
+        <div class="row ml-1 mt-4">
+            <h5 for="post-content" class="label">Post Content</h5>
+        </div>
+        <div class="row ml-1">
+            <textarea class="form-control" type="text" id="create-post-content" name="post-content" rows="8"></textarea>
+        </div>
+        <div class="row ml-1 mt-2">
+            <button type="submit" class="btn btn-info" id="btn-post-submit">Create</button>
+        </div>
     </form>
 </div>
 <script src="/js/create-post.js"></script>

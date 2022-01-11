@@ -12,6 +12,8 @@ const sequelize = require("./config/connection");
 const session = require("express-session");
 // add sequelize session store
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
+// add helpers
+const hbsHelpers = require('./utils/helpers.js');
 
 //set up express session
 const sess = {
@@ -37,7 +39,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(session(sess));
 app.use(routes);
 // switch handlebars extension to hbs
-app.engine('hbs', exphbs.engine({defaultLayout: 'main', extname: '.hbs'}));
+app.engine('hbs', exphbs.engine({defaultLayout: 'main', extname: '.hbs', helpers: hbsHelpers }));
 app.set('view engine', 'hbs');
 
 //start server
