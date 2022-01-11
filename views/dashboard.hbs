@@ -1,0 +1,61 @@
+<div class="column" id="menu-box">
+    <div class="card">
+        <button type="submit" id="btn-create" class="button">Create Post</button>
+        <button type="submit" id="btn-myPosts" class="button">My Posts</button>
+        <button type="submit" id="btn-editProfile" class="button">Edit Profile</button>
+    </div>
+</div>
+<div class="column" id="create-post">
+    <form class="create-post-form">
+        <div>
+            <label for="post-title" class="label">Title</label>
+            <input class="input" type="text" id="post-title" name="post-title"/>
+        </div>
+        <div>
+            <label for="post-content" class="label">Post Content</label>
+            <textarea class="textarea" type="text" id="post-content" name="post-content"/>
+        </div>
+        <button type="submit" class="button" id="btn-post-submit">Create</button>
+    </form>
+</div>
+
+<div class="column" id="posts-div">
+{{#if posts.length}}
+    <h2 class="title">Your Posts</h2>
+    <div class="box" id="profile-posts-box">
+        {{#each posts as |onePost|}}
+        <div>
+            {{> post onePost}}
+            <a href="/dashboard/edit/{{post.pst_id}}" class="edit-link">Edit Post</a>
+        </div>
+        {{/each}}
+    </div>
+{{else}}
+    <h2 class="title">No posts to show!</h2>
+{{/if}}
+</div>
+
+<div class="column" id="profile">
+    <div>
+        <label for="gh-profile">Github Username:</label>
+        <input type="text" id="gh-profile" />
+        <button type="submit" class="button" id="btn-update-gh">Update</button>
+    </div>
+    <div>
+        <label for="tw-profile">Twitter Username (optional):</label>
+        <input type="text" id="tw-profile" />
+        <button type="submit" class="button" id="btn-update-tw">Update</button>        
+    </div>
+    <div>
+        <label for="so-profile">StackOverflow Username (optional):</label>
+        <input type="text" id="so-profile" />
+        <button type="submit" class="button" id="btn-update-so">Update</button>        
+    </div>
+    <div>
+        <label for="pf-profile">Portfolio Link (optional):</label>
+        <input type="text" id="pf-profile" />
+        <button type="submit" class="button" id="btn-update-pf">Update</button>        
+    </div>
+</div>
+
+<script src="/js/create-post.js"></script>
