@@ -7,19 +7,19 @@
                 <button type="submit" id="btn-editProfile" class="btn btn-none list-group-item bg-info mt-2">Edit Profile</button>
             </div>
         </div>
-        <div class="col-10 d-none" id="menu-box">
+        <div class="col-10 d-none" id="create-div">
             <div class="container" id="profile-create-post">
                 {{> create-post}}
             </div>
         </div>
-        <div class="col-8 d-none" id="posts-div">
+        <div class="col-10 d-none" id="posts-div">
             {{#if posts.length}}
-            <h2 class="title">Your Posts</h2>
-            <div class="box" id="profile-posts-box">
+            <h2 class="title mb-3">Your Posts</h2>
+            <div class="list-group mt-1" id="profile-posts-box">
                 {{#each posts as |onePost|}}
                 <div>
-                {{> post onePost}}
-                <a href="/dashboard/edit/{{onePost.pst_id}}" class="edit-link">Edit Post</a>
+                    {{> post onePost}}
+                    <a href="/dashboard/edit/{{onePost.pst_id}}" class="btn btn-info mt-2 mb-4">Edit Post</a>
                 </div>
                 {{/each}}
             </div>
@@ -27,27 +27,29 @@
             <h2 class="title">No posts to show!</h2>
             {{/if}}
         </div>
+    <div class="col-10" id="profile-div">
+        <h2 class="title mb-3">External Profiles - Coming Soon</h2>
+        <div class="d-flex flex-row mr-5 d-flex mb-2">
+            <h5 for="gh-profile" class="w-25 mt-1 mr-2">Github Username:</h5>
+            <input class="form-control w-50" type="text" id="gh-profile" value="{{usr_github}}"/>
+            <button type="submit" class="btn btn-info ml-2 disabled" id="btn-update-gh">Update</button>
+        </div>
+        <div class="d-flex flex-row mr-5 d-flex mb-2">
+            <h5 for="tw-profile" class="w-25 mt-1 mr-2">Twitter Username:</h5>
+            <input class="form-control w-50" type="text" id="tw-profile" />
+            <button type="submit" class="btn btn-info ml-2 disabled" id="btn-update-tw">Update</button>        
+        </div>
+        <div class="d-flex flex-row mr-5 d-flex mb-2">
+            <h5 for="so-profile" class="w-25 mt-1 mr-2">StackOverflow Username:</h5>
+            <input class="form-control w-50 disabled" type="text" id="so-profile" />
+            <button type="submit" class="btn btn-info ml-2 disabled" id="btn-update-so">Update</button>        
+        </div>
+        <div class="d-flex flex-row mr-5 d-flex mb-2">
+            <h5 for="pf-profile" class="w-25 mt-1 mr-2">Portfolio Link:</h5>
+            <input class="form-control w-50" type="text" id="pf-profile" />
+            <button type="submit" class="btn btn-info ml-2 disabled" id="btn-update-pf">Update</button>        
+        </div>
+    </div>
+</div>
 
-<div class="col-8 d-none" id="profile-div">
-    <div>
-        <label for="gh-profile">Github Username:</label>
-        <input type="text" id="gh-profile" />
-        <button type="submit" class="button" id="btn-update-gh">Update</button>
-    </div>
-    <div>
-        <label for="tw-profile">Twitter Username:</label>
-        <input type="text" id="tw-profile" />
-        <button type="submit" class="button" id="btn-update-tw">Update</button>        
-    </div>
-    <div>
-        <label for="so-profile">StackOverflow Username:</label>
-        <input type="text" id="so-profile" />
-        <button type="submit" class="button" id="btn-update-so">Update</button>        
-    </div>
-    <div>
-        <label for="pf-profile">Portfolio Link:</label>
-        <input type="text" id="pf-profile" />
-        <button type="submit" class="button" id="btn-update-pf">Update</button>        
-    </div>
-</div>
-</div>
+<script src="/js/dashboard.js"></script>
