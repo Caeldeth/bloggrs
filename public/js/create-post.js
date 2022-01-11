@@ -1,8 +1,8 @@
 async function createHandler(event) {
     event.preventDefault();
 
-    const pst_title = document.querySelector("#create-post-title").value
-    const pst_content = document.querySelector("#create-post-content").value
+    const pst_title = document.querySelector("#create-post-title").value;
+    const pst_content = document.querySelector("#create-post-content").value;
 
     const response = await fetch('/api/posts', {
         method: 'post',

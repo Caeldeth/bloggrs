@@ -69,7 +69,7 @@ router.post("/", hasAuth, (req, res) => {
     Post.create({
         pst_title: req.body.pst_title,
         pst_content: req.body.pst_content,
-        pst_usr_id: req.session.pst_usr_id,
+        pst_usr_id: req.session.usr_id,
     })
         .then((dbPostData) => res.json(dbPostData))
         .catch((err) => {
