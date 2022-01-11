@@ -52,7 +52,7 @@ router.get("/:cmt_id", (req, res) => {
 router.post('/', hasAuth, (req, res) => {
   Comment.create({
     cmt_text: req.body.cmt_text,
-    cmt_usr_id: req.session.cmt_usr_id,
+    cmt_usr_id: req.session.usr_id,
     cmt_pst_id: req.body.cmt_pst_id
   })
     .then(dbCommentData => res.json(dbCommentData))

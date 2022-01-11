@@ -12,10 +12,10 @@
 </div>
 {{!-- Add Comment --}}
 <div class="padding-20">
-    <form id="comment-form ">
+    <form id="comment-form">
         <label for="comment-text">Leave A Comment</label>
-        <input class="padding-20" type="textarea" name="comment-text" id="comment-text">
-        <button class="padding-20" id="post-comment-btn">Post!</button>
+        <textarea class="textarea" type="text" id="comment-text"></textarea>
+        <button class="padding-20" id="btn-post-comment">Post!</button>
     </form>
 </div>
 <div class=container>
@@ -26,3 +26,5 @@
     </li>
     {{/each}}
 </div>
+
+<script src="/js/comment.js"></script>
