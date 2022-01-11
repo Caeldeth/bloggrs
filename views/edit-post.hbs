@@ -13,7 +13,7 @@
             <textarea class="textarea" type="text" id="edit-post-content">{{post.pst_content}}</textarea>
         </div>
         <div>
-            <p>Authored by you on | {{post.created_at}} </p>
+            <p>Authored by you on | {{format_date post.created_at}} </p>
         </div>
         <button type="submit" class="button" id="btn-save-edit">Save</button>
         <button type="submit" class="button" id="btn-delete-edit">Delete</button>
