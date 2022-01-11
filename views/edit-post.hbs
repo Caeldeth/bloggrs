@@ -1,0 +1,28 @@
+<article>
+    <a href="/dashboard" class="return-link"> &Lang; Dashboard</a>
+    <div class="card">
+        <h2 class="card-title">Edit Post</h2>
+    </div>
+    <form class="edit-form">
+        <div>
+            <label for="edit-title">Title</label>
+            <input type="text" id="edit-title" value="{{post.pst_title}}"/>
+        </div>
+        <div>
+            <label for="edit-title">Content</label>
+            <textarea class="textarea" type="text" id="edit-post-content">{{post.pst_content}}</textarea>
+        </div>
+        <div>
+            <p>Authored by you on | {{post.created_at}} </p>
+        </div>
+        <button type="submit" class="button" id="save-edit">Save</button>
+        <button type="submit" class="button" id="delete-edit">Delete</button>
+    </form>
+    <div class=box>
+        {{> comment post.comments}}
+    </div>  
+</article>
+
+<script src="/js/edit-post.js"></script>
+<script src="/js/delete-post.js"></script>
+
