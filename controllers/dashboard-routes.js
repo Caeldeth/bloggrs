@@ -7,7 +7,7 @@ const hasAuth = require('../utils/auth');
 router.get('/', hasAuth, (req, res) => {
     Post.findAll({
       where: {
-        usr_id: req.session.usr_id
+        pst_usr_id: req.session.usr_id
       },
       attributes: ['pst_id', 'pst_title', 'pst_content', 'created_at'],
       include: [

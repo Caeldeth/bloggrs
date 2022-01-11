@@ -17,7 +17,7 @@
         {{#each posts as |onePost|}}
         <div>
             {{> post onePost}}
-            <a href="/dashboard/edit/{{post.pst_id}}" class="edit-link">Edit Post</a>
+            <a href="/dashboard/edit/{{onePost.pst_id}}" class="edit-link">Edit Post</a>
         </div>
         {{/each}}
     </div>
@@ -33,17 +33,17 @@
         <button type="submit" class="button" id="btn-update-gh">Update</button>
     </div>
     <div>
-        <label for="tw-profile">Twitter Username (optional):</label>
+        <label for="tw-profile">Twitter Username:</label>
         <input type="text" id="tw-profile" />
         <button type="submit" class="button" id="btn-update-tw">Update</button>        
     </div>
     <div>
-        <label for="so-profile">StackOverflow Username (optional):</label>
+        <label for="so-profile">StackOverflow Username:</label>
         <input type="text" id="so-profile" />
         <button type="submit" class="button" id="btn-update-so">Update</button>        
     </div>
     <div>
-        <label for="pf-profile">Portfolio Link (optional):</label>
+        <label for="pf-profile">Portfolio Link:</label>
         <input type="text" id="pf-profile" />
         <button type="submit" class="button" id="btn-update-pf">Update</button>        
     </div>
