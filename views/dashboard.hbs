@@ -5,18 +5,9 @@
         <button type="submit" id="btn-editProfile" class="button">Edit Profile</button>
     </div>
 </div>
-<div class="column" id="create-post">
-    <form class="create-post-form">
-        <div>
-            <label for="post-title" class="label">Title</label>
-            <input class="input" type="text" id="post-title" name="post-title"/>
-        </div>
-        <div>
-            <label for="post-content" class="label">Post Content</label>
-            <textarea class="textarea" type="text" id="post-content" name="post-content"/>
-        </div>
-        <button type="submit" class="button" id="btn-post-submit">Create</button>
-    </form>
+
+<div class="column" id="profile-create-post">
+    {{> create-post}}
 </div>
 
 <div class="column" id="posts-div">
@@ -58,4 +49,3 @@
     </div>
 </div>
 
-<script src="/js/create-post.js"></script>
