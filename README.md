@@ -26,7 +26,7 @@
 bloggrs is a fully functional blog, useable for technology or your favorite fan topics.
 
 ## Usage
-To use this application, you must have:
+To use this application locally, you must have:
 1) MySQL 
 2) Node.js
 
@@ -35,7 +35,7 @@ Once you have cloned the repo, you must follow these additional steps:
 2) add your MySQL login name to DB_USER
 3) add your MySQL password to DB_PW
 
-Without following these steps, the application will not function.  
+Without following these steps, the application will not function.  Otherwise, visit the deployed application on [heroku](https://vast-inlet-23068.herokuapp.com/).
 
 ## Contributing
 This project utilizes the [Contributor Covenant](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
@@ -52,3 +52,4 @@ Visit my [profile](https://github.com/Caeldeth) to see more great projects!
 ![Dashboard Page](./images/bloggrs-dashboard.png)
 
 ## Website
+[On Heroku](https://vast-inlet-23068.herokuapp.com/)
